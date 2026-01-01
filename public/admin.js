@@ -1,3 +1,4 @@
+const API_URL = "https://quiz-app.onrender.com";
 async function enter() {
     const username = document.getElementById("name").value.trim();
     const password = document.getElementById("number").value.trim();
@@ -8,7 +9,7 @@ async function enter() {
     }
 
     try {
-        const response = await fetch("http://localhost:3000/admin/login", {
+        const response = await fetch(`${API_URL}/admin/login`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username, password })
@@ -56,7 +57,7 @@ async function saveQuestions(questions, subject, className) {
     }
 
     try {
-        const res = await fetch("http://localhost:3000/questions", {
+        const res = await fetch(`${API_URL}/questions`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
