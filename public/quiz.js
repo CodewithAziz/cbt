@@ -1,3 +1,5 @@
+const API_URL = "https://quiz-app.onrender.com";
+
 let quizFinished = false;
 let questions = [];
 let currentIndex = 0;
@@ -20,7 +22,7 @@ const optionRadios = document.querySelectorAll('input[type="radio"]');
 const optionLabels = document.querySelectorAll(".op");
 const timerDisplay = document.getElementById("timer");
 
-fetch(`http://localhost:3000/questions/${quizCode}`)
+fetch(`${API_URL}/questions/${quizCode}`)
     .then(res => res.json())
     .then(data => {
         if (!Array.isArray(data) || data.length === 0) {
@@ -134,7 +136,7 @@ function submit(target = "score.html") {
         if (answers[i] === q.correct) score++;
     });
 
-    fetch("http://localhost:3000/results", {
+    fetch(`${API_URL}/results`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
