@@ -1,3 +1,4 @@
+const API_URL = "https://quiz-app.onrender.com";
 document.addEventListener("DOMContentLoaded", () => {
     const hamBtn = document.getElementById("ha");
     const cloBtn = document.getElementById("clo");
@@ -167,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        fetch("http://localhost:3000/questions", {
+        fetch(`${API_URL}/questions`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
