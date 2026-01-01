@@ -1,4 +1,4 @@
-const API_URL = "https://quiz-app.onrender.com";
+const API_URL = "https://cbt-backend-jewj.onrender.com";
 
 let quizFinished = false;
 let questions = [];
