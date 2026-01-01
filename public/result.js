@@ -1,3 +1,4 @@
+const API_URL = "https://cbt-backend-jewj.onrender.com";
 document.addEventListener("DOMContentLoaded", () => {
     const hamBtn = document.getElementById("ha");
     const cloBtn = document.getElementById("clo");
@@ -56,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (date) params.append("date", date);
 
         try {
-            const res = await fetch(`/api/results?${params.toString()}`, {
+            const res = await fetch(`${API_URL}/api/results?${params.toString()}`, {
                 headers: { Authorization: `Bearer ${token} `}
             });
 
@@ -84,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         } catch (err) {
             console.error(err);
-            alert("Error fetching results. Make sure you are running through the server (http://localhost:3000).");
+            alert(`Error fetching results. Make sure you are running through the server at ${API_URL}.`);
         }
     });
 });
