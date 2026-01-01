@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: black;
+}
+
+.header {
+    background-color: #1877f2;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.head {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.card-container {
+    background-color: white;
+    width: 98%;
+    height: 200px;
+    border-radius: 10px;
+    margin: 12px;
+}
+
+.card {
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+} 
+
+.ans {
+    background-color: white;
+    border-radius: 10px;
+    margin: 12px;
+    width: 98%;
+    height: 200px;
+}
+
+.an {
+    padding: 15px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+.ans {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    padding: 20px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.an {
+    border: solid 1px rgb(12, 12, 12);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+input:focus-visible {
+    outline: 2px solid blue;
+    border-radius: 50%;
+}
+
+input:active {
+    transform: scale(1);
+}
+
+.buts {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 10%;
+    border: none;
+    background: linear-gradient(90deg, #7A5FFF, #3A7AFE);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button:hover {
+     background: linear-gradient(90deg, #8A57FE, #7A7AEF);
+}
+
+button:active {
+    transform: scale(0.9);
+     background: linear-gradient(90deg, #1f125f, #3A7AFE);
+}
+
+.no {
+    font-size: 12px;
+    padding-top: 0;
+}
+
+#sub {
+    display: none;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+.op.selected {
+    background: #1877f2;
+    color: white;
+    border: solid 1px red;
+}
+
+.ques {
+    margin-top: 50px;
+}
+
+.no {
+    margin-top: 20px;
+    font-size: 18px;
+}

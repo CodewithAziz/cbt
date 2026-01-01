@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Results</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <div class="la" id="la">
+        <button id="clo">&times;</button>
+        <ul>
+            <li><a href="dashboard.html">Questions</a></li>
+            <li><a href="result.html">Check Results</a></li>
+        </ul>
+        <div class="lone">
+            <li><a href="#" id="logoutLink">Logout</a></li>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="head">
+            <button id="ha">☰</button>
+            <p class="ad">Admin Dashboard</p>
+        </div>
+        <button id="log">Logout</button>
+    </div>
+
+    <div class="question-card">
+        <div class="question">
+            <p class="up">Check Results</p>
+            <div class="info">
+                <div class="in">
+                    <label for="subject">Subject</label><br>
+                    <input type="text" id="subjectInput" placeholder="Enter Subject">
+                </div>
+                <div class="in">
+                    <label for="classSelect">Class</label><br>
+                    <select id="classSelect">
+                        <option value="" selected disabled>Select Class</option>
+                        <option value="JSS1">JSS1</option>
+                        <option value="JSS2">JSS2</option>
+                        <option value="JSS3">JSS3</option>
+                        <option value="SS1">SS1</option>
+                        <option value="SS2">SS2</option>
+                        <option value="SS3">SS3</option>
+                    </select>
+                </div>
+                <div class="in">
+                    <label for="dat">Date</label><br>
+                    <input type="date" id="dat">
+                </div>
+                <div class="in">
+                    <button id="view">View Results</button>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Admission Number</th>
+                        <th>Class</th>
+                        <th>Subject</th>
+                        <th>Date</th>
+                        <th>Score</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsBody">
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="result.js"></script>
+</body>
+</html>

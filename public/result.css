@@ -1,0 +1,179 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ddd;
+}
+
+.header {
+    background-color: #1f2937;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.head {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#log {
+    width: 7%;
+    border: none;
+    border-radius: 10px;
+    background-color: #ef4444;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    margin-right: 10px;
+}
+
+.ad {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#ha {
+    border: none;
+    font-size: 25px;
+    background-color: #1f2937;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+}
+
+.la {
+    display: none;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+    z-index: 1000;
+    height: 100vh;
+    background-color: #1f2937;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+}
+
+.la.active {
+    transform: translateX(0);
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+     color: white;
+    display: block;
+}
+
+ul li {
+    margin-bottom: 20px;  
+}
+
+#clo {
+    font-size: 25px;
+    align-self: flex-end;
+    width: 10%;
+    margin-top: 10px;
+}
+
+.lone {
+    margin-top: auto;
+    padding: 10px;
+}
+
+.up {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.question-card {
+    background-color: white;
+    border-radius: 10px; 
+    margin: 10px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.in {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+}
+
+input {
+    border: solid 1px #ddd;
+    padding: 5px 20px;
+    width: 70%;
+    border-radius: 5px;
+}
+
+select {
+    border: solid 1px #ddd;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    width: 98%;
+    margin: 10px;
+}
+
+th, td {
+    border: solid 1px #382929;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+th {
+background-color: #1f2937;
+color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #c2abab;
+}
+
+button:active {
+    transform: scale(0.9);
+} 
+
+#view {
+    background-color: #1f2937;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    border-radius: 5px;
+}

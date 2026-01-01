@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz-code</title>
+        <link rel="stylesheet" href="quiz.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="head">
+                <span id="timer">Time-left: 10:00</span>
+                <span id="quizSubject">Subject: CIVIC</span>
+                <span id="quizClass">Class: SS3</span>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <p class="no" id="qu"></p>
+                <p class="ques" id="que">what is a noun?</p>
+            </div>
+        </div>
+        <div class="ans">
+            <div class="an op">
+                <label><input type="radio" name="q1" value="A"><span></span>
+                <p class="option" id="optA"></p></label>
+            </div>
+            <div class="an op">
+                <label><input type="radio" name="q1" value="B">
+                <p class="option" id="optB"></p></label>
+            </div>
+            <div class="an op">
+                <label><input type="radio" name="q1" value="C">
+                <p class="option" id="optC"></p></label>
+            </div>
+            <div class="an op" >
+                <label><input type="radio" name="q1" value="D">
+                <p class="option" id="optD"></p></label>
+            </div>
+        </div>
+        <div class="buts">
+            <button onclick="previous()" id="prea">Previous</button>
+            <button onclick="next()" id="ne">Next</button>
+            <button onclick="submit()" id="sub">Submit</button>
+        </div>
+         <script src="quiz.js"></script>
+    </body>
+</html>

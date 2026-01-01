@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="dashboard.css">
+    </head>
+    <body>
+         <div class="la" id="la">
+                <button onclick="clo()" id="clo">&times</button>
+                <ul>
+                <li><a href="dashboard.html">Questions</a></li>
+                <li><a href="result.html">Check Results</a></li>
+            </ul>
+             <div class="lone">
+                     <li><a href="#">Logout</a></li>
+                </div>
+            </div>
+        <div class="header">
+            <div class="head">
+            <button onclick="ham()" id="ha">☰</button>
+            <p class="ad">Admin Dashboard</p>
+            </div>
+            <button onclick="logout()" id="log">Logout</button>
+        </div>
+            <div class="question-card">
+                <div class="question">
+                    <p class="up">Uploaded Question</p>
+                    <div class="info">
+                        <div class="in">
+                            <label for="subject">Subject</label><br>
+                            <input type="text" placeholder="Enter Subject">
+                        </div>
+                         <div class="in">
+                            <label for="subject">Class</label><br>
+                            <select id="classSelect" name="class" class="select">
+                                <option value=""selected disabled>Select Class</option>
+                                <option>JSS1</option>
+                                <option>JSS2</option>
+                                <option>JSS3</option>
+                                <option>SS1</option>
+                                <option>SS2</option>
+                                <option>SS3</option>
+                            </select>
+                        </div>
+                        <div class="in">
+                            <label for="quizTime">Quiz Time (minutes)</label><br>
+                            <input type="number" id="quizTime" min="1" placeholder="Enter time">
+                        </div>
+                         <div class="in">
+                            <label for="subject">Number of Questions</label><br>
+                            <input type="number" id="num">
+                        </div>
+                        <div class="in">
+                            <label for="csvFile">Upload Questions CSV</label><br>
+                            <input type="file" id="csvFile" accept=".csv">
+                        </div>
+                    </div>
+                    <div class="grid-container">
+                        <div class="head-grid">
+                            <p>Question</p>
+                            <p>Option A</p>
+                            <p>Option B</p>
+                            <p>Option C</p>
+                            <p>Option D</p>
+                            <p>Correct Answer</p>
+                        </div>
+                    </div>
+                    <div class="hold" id="hol">
+                        <div class="hol">
+                            <input type="text" placeholder="Question" class="ans"><br>
+                            <input type="text" placeholder="Option A" class="ans"><br>
+                            <input type="text" placeholder="Option B" class="ans"><br>
+                            <input type="text" placeholder="Option C" class="ans"><br>
+                            <input type="text" placeholder="Option D" class="ans"><br>
+                            <select>
+                                <option selected disabled>Correct Answer</option>
+                                <option>A</option>
+                                <option>B</option>
+                                <option>C</option>
+                                <option>D</option>
+                            </select>
+
+                            <button class="del" onclick="deleteQuestion(this)">Delete</button>
+                        </div>
+                    </div>
+                    <div class="but">
+                        <button onclick="add()" id="ad">+ Add Question</button>
+                    </div>
+                    <div class="save">
+                    <button onclick="save()" id="sav">Save Questions</button>
+                    </div>
+                </div>
+            </div>
+        <script src="dashboard.js"></script>
+    </body>
+</html>
