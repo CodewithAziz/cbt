@@ -1,4 +1,4 @@
-const API_URL = "https://quiz-app.onrender.com";
+const API_URL = "https://cbt-backend-jewj.onrender.com";
 async function enter() {
     const username = document.getElementById("name").value.trim();
     const password = document.getElementById("number").value.trim();
