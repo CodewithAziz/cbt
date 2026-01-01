@@ -79,11 +79,6 @@ input[type="radio"] {
     cursor: pointer;
 }
 
-label:hover {
-    background-color: #ddd;
-    border-radius: 10px;
-}
-
 input:focus-visible {
     outline: 2px solid blue;
     border-radius: 50%;
